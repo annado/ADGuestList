@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58179290181118FC002F381C /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5817928A181118FC002F381C /* libTestFlight.a */; };
+		58179291181118FC002F381C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5817928B181118FC002F381C /* README.md */; };
+		58179292181118FC002F381C /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 5817928C181118FC002F381C /* release_notes.md */; };
+		581792941811196D002F381C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 581792931811196D002F381C /* libz.dylib */; };
 		58EB41001805133A006ACDEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EB40FF1805133A006ACDEC /* UIKit.framework */; };
 		58EB41021805133A006ACDEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EB41011805133A006ACDEC /* Foundation.framework */; };
 		58EB41041805133A006ACDEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EB41031805133A006ACDEC /* CoreGraphics.framework */; };
@@ -21,6 +25,14 @@
 		58EB41201805133A006ACDEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EB41011805133A006ACDEC /* Foundation.framework */; };
 		58EB41281805133A006ACDEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58EB41261805133A006ACDEC /* InfoPlist.strings */; };
 		58EB412B1805133A006ACDEC /* ADGuestListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58EB412A1805133A006ACDEC /* ADGuestListTests.m */; };
+		58EB4136180513B8006ACDEC /* ADItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58EB4135180513B8006ACDEC /* ADItemsViewController.m */; };
+		58EB4139180515AC006ACDEC /* ADGuestItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 58EB4138180515AC006ACDEC /* ADGuestItem.m */; };
+		58EB413A180515AC006ACDEC /* ADGuestItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 58EB4138180515AC006ACDEC /* ADGuestItem.m */; };
+		58EB413D180516AA006ACDEC /* ADGuestStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 58EB413C180516AA006ACDEC /* ADGuestStore.m */; };
+		58EB413E180516AA006ACDEC /* ADGuestStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 58EB413C180516AA006ACDEC /* ADGuestStore.m */; };
+		58EB4162180CCD45006ACDEC /* ADDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58EB4160180CCD44006ACDEC /* ADDetailViewController.m */; };
+		58EB4163180CCD45006ACDEC /* ADDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58EB4161180CCD44006ACDEC /* ADDetailViewController.xib */; };
+		58EB4166180E528E006ACDEC /* ADImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 58EB4165180E528E006ACDEC /* ADImageStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5817928A181118FC002F381C /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		5817928B181118FC002F381C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		5817928C181118FC002F381C /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		5817928D181118FC002F381C /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		5817928E181118FC002F381C /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		5817928F181118FC002F381C /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		581792931811196D002F381C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		58EB40FC1805133A006ACDEC /* ADGuestList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADGuestList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58EB40FF1805133A006ACDEC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		58EB41011805133A006ACDEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +72,17 @@
 		58EB41271805133A006ACDEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		58EB41291805133A006ACDEC /* ADGuestListTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADGuestListTests.h; sourceTree = "<group>"; };
 		58EB412A1805133A006ACDEC /* ADGuestListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADGuestListTests.m; sourceTree = "<group>"; };
+		58EB4134180513B8006ACDEC /* ADItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADItemsViewController.h; sourceTree = "<group>"; };
+		58EB4135180513B8006ACDEC /* ADItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADItemsViewController.m; sourceTree = "<group>"; };
+		58EB4137180515AC006ACDEC /* ADGuestItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADGuestItem.h; sourceTree = "<group>"; };
+		58EB4138180515AC006ACDEC /* ADGuestItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADGuestItem.m; sourceTree = "<group>"; };
+		58EB413B180516AA006ACDEC /* ADGuestStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADGuestStore.h; sourceTree = "<group>"; };
+		58EB413C180516AA006ACDEC /* ADGuestStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADGuestStore.m; sourceTree = "<group>"; };
+		58EB415F180CCD44006ACDEC /* ADDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADDetailViewController.h; sourceTree = "<group>"; };
+		58EB4160180CCD44006ACDEC /* ADDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADDetailViewController.m; sourceTree = "<group>"; };
+		58EB4161180CCD44006ACDEC /* ADDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADDetailViewController.xib; sourceTree = "<group>"; };
+		58EB4164180E528E006ACDEC /* ADImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADImageStore.h; sourceTree = "<group>"; };
+		58EB4165180E528E006ACDEC /* ADImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADImageStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +90,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				581792941811196D002F381C /* libz.dylib in Frameworks */,
 				58EB41001805133A006ACDEC /* UIKit.framework in Frameworks */,
 				58EB41021805133A006ACDEC /* Foundation.framework in Frameworks */,
 				58EB41041805133A006ACDEC /* CoreGraphics.framework in Frameworks */,
+				58179290181118FC002F381C /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,11 +111,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58179289181118FC002F381C /* TestFlightSDK */ = {
+			isa = PBXGroup;
+			children = (
+				5817928A181118FC002F381C /* libTestFlight.a */,
+				5817928B181118FC002F381C /* README.md */,
+				5817928C181118FC002F381C /* release_notes.md */,
+				5817928D181118FC002F381C /* TestFlight+AsyncLogging.h */,
+				5817928E181118FC002F381C /* TestFlight+ManualSessions.h */,
+				5817928F181118FC002F381C /* TestFlight.h */,
+			);
+			path = TestFlightSDK;
+			sourceTree = SOURCE_ROOT;
+		};
 		58EB40F31805133A006ACDEC = {
 			isa = PBXGroup;
 			children = (
 				58EB41051805133A006ACDEC /* ADGuestList */,
 				58EB41231805133A006ACDEC /* ADGuestListTests */,
+				58179289181118FC002F381C /* TestFlightSDK */,
 				58EB40FE1805133A006ACDEC /* Frameworks */,
 				58EB40FD1805133A006ACDEC /* Products */,
 			);
@@ -101,6 +147,7 @@
 		58EB40FE1805133A006ACDEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				581792931811196D002F381C /* libz.dylib */,
 				58EB40FF1805133A006ACDEC /* UIKit.framework */,
 				58EB41011805133A006ACDEC /* Foundation.framework */,
 				58EB41031805133A006ACDEC /* CoreGraphics.framework */,
@@ -112,8 +159,19 @@
 		58EB41051805133A006ACDEC /* ADGuestList */ = {
 			isa = PBXGroup;
 			children = (
+				58EB4134180513B8006ACDEC /* ADItemsViewController.h */,
+				58EB4135180513B8006ACDEC /* ADItemsViewController.m */,
 				58EB410E1805133A006ACDEC /* ADAppDelegate.h */,
 				58EB410F1805133A006ACDEC /* ADAppDelegate.m */,
+				58EB415F180CCD44006ACDEC /* ADDetailViewController.h */,
+				58EB4160180CCD44006ACDEC /* ADDetailViewController.m */,
+				58EB4164180E528E006ACDEC /* ADImageStore.h */,
+				58EB4165180E528E006ACDEC /* ADImageStore.m */,
+				58EB4161180CCD44006ACDEC /* ADDetailViewController.xib */,
+				58EB4137180515AC006ACDEC /* ADGuestItem.h */,
+				58EB4138180515AC006ACDEC /* ADGuestItem.m */,
+				58EB413B180516AA006ACDEC /* ADGuestStore.h */,
+				58EB413C180516AA006ACDEC /* ADGuestStore.m */,
 				58EB41061805133A006ACDEC /* Supporting Files */,
 			);
 			path = ADGuestList;
@@ -200,6 +258,11 @@
 				CLASSPREFIX = AD;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = ADT;
+				TargetAttributes = {
+					58EB40FB1805133A006ACDEC = {
+						DevelopmentTeam = XT54A96D95;
+					};
+				};
 			};
 			buildConfigurationList = 58EB40F71805133A006ACDEC /* Build configuration list for PBXProject "ADGuestList" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -224,10 +287,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58179291181118FC002F381C /* README.md in Resources */,
 				58EB410A1805133A006ACDEC /* InfoPlist.strings in Resources */,
 				58EB41121805133A006ACDEC /* Default.png in Resources */,
 				58EB41141805133A006ACDEC /* Default@2x.png in Resources */,
+				58179292181118FC002F381C /* release_notes.md in Resources */,
 				58EB41161805133A006ACDEC /* Default-568h@2x.png in Resources */,
+				58EB4163180CCD45006ACDEC /* ADDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +330,11 @@
 			files = (
 				58EB410C1805133A006ACDEC /* main.m in Sources */,
 				58EB41101805133A006ACDEC /* ADAppDelegate.m in Sources */,
+				58EB4136180513B8006ACDEC /* ADItemsViewController.m in Sources */,
+				58EB4139180515AC006ACDEC /* ADGuestItem.m in Sources */,
+				58EB413D180516AA006ACDEC /* ADGuestStore.m in Sources */,
+				58EB4162180CCD45006ACDEC /* ADDetailViewController.m in Sources */,
+				58EB4166180E528E006ACDEC /* ADImageStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +343,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				58EB412B1805133A006ACDEC /* ADGuestListTests.m in Sources */,
+				58EB413A180515AC006ACDEC /* ADGuestItem.m in Sources */,
+				58EB413E180516AA006ACDEC /* ADGuestStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,10 +439,17 @@
 		58EB412F1805133A006ACDEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ADGuestList/ADGuestList-Prefix.pch";
 				INFOPLIST_FILE = "ADGuestList/ADGuestList-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ado/src/ios/ADGuestList/TestFlightSDK,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -377,10 +457,17 @@
 		58EB41301805133A006ACDEC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ADGuestList/ADGuestList-Prefix.pch";
 				INFOPLIST_FILE = "ADGuestList/ADGuestList-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ado/src/ios/ADGuestList/TestFlightSDK,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -438,6 +525,7 @@
 				58EB41301805133A006ACDEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		58EB41311805133A006ACDEC /* Build configuration list for PBXNativeTarget "ADGuestListTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +534,7 @@
 				58EB41331805133A006ACDEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

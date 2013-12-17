@@ -7,15 +7,28 @@
 //
 
 #import "ADAppDelegate.h"
+#import "ADItemsViewController.h"
+#import "TestFlight.h"
+#import "ADGuestStore.h"
 
 @implementation ADAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [TestFlight takeOff:@"b4f771ce-3ab0-4be0-aa56-1f60e72665c4"];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    // Create a ItemsViewController
+    ADItemsViewController *itemsViewController = [[ADItemsViewController alloc] init];
+
+    // Create instance of UINavigationController
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:itemsViewController];
+    [[self window] setRootViewController:navController];
+
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+
+    
     return YES;
 }
 
@@ -29,6 +42,12 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    BOOL success = [ADGuestStore.sharedStore saveChanges];
+    if (success) {
+        NSLog(@"Saved all ADGuestItems");
+    } else {
+        NSLog(@"Could not save any of the ADGuestItems");
+    }
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
